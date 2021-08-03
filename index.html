@@ -7,6 +7,8 @@
     <title>Como surgiu o mascote do Android</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/btnMenu.css">
+    <link rel="stylesheet" href="style/menu.css">
 </head>
 <body>
     <header>
@@ -14,7 +16,24 @@
         <p class="header">Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
         
     </header>
-    <nav>
+    <nav class="wrap-menu">
+        <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
+
+        <ul id="menu" class="menu">
+            <li class="btnMenu btnMenu_close">Sair</li>
+            <li class="menu-item">
+                <a href="" class="menu-item-action">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-action">Notícias</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-action">Curiosidades</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-action">Fale Conosco</a>
+            </li>
+        </ul>
         <a href="#">Home</a>
         <a href="#">Notícias</a>
         <a href="#">Curiosidades</a>
@@ -114,5 +133,6 @@
     <footer>
         <p>Site criado por <a href="https://github.com/hayanngs" target="_blank">Hayann</a></p>
     </footer>
+    <script src="js/btnMenu.js"></script>
 </body>
 </html>
